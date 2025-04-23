@@ -3,20 +3,10 @@
 import Link from "next/link";
 
 export default function Home() {
-  // const [audio] = useState(typeof Audio !== "undefined" ? new Audio("/assets/song1.mp3") : null);
-
-  // useEffect(() => {
-  //   if (audio) {
-  //     audio.loop = true;
-  //   }
-  // }, [audio]);
 
   return (
     <div
       className="relative z-10 h-screen overflow-hidden"
-      // onClick={() => {
-      //   if (audio) audio.play();
-      // }}
     >
       <Link href="/login" className="h-full w-full flex justify-center cursor-pointer container mx-auto">
         <div className="absolute w-full h-full bg-[#E6E2D7]/60 backdrop-blur-sm flex flex-col justify-center items-center">
@@ -27,8 +17,8 @@ export default function Home() {
               <p className="text-[#3d3b34] font-bold text-5xl relative">NEOVAH</p>
             </span>
           </div>
-          <p className="text-white font-medium text-lg relative text-center">Simple Crafting<br/>Web Based Games</p>
-          <p className="text-white font-medium text-xl mt-10 idle relative text-center">--- Touch Anything to Start ---</p>
+          <p className="text-white font-medium text-lg relative text-center">Simple RPG Turn-based<br/>Web Based Games</p>
+          <p className="text-white font-medium text-xl mt-10 idle relative text-center">--- Tekan untuk mulai ---</p>
         </div>
       </Link>
     </div>
